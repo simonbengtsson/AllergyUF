@@ -22,16 +22,25 @@ class AddAllergyController: UIViewController, UITableViewDelegate, UITableViewDa
         if let tempallergyList = defaults.object(forKey: allergyListKey) {
             allergyList = tempallergyList as! [String]
         }
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
+        view.addGestureRecognizer(tapGesture)
     }
 
+    @objc private func viewTapped(gesture: UITapGestureRecognizer) {
+        textField.resignFirstResponder()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     @IBAction func addAllergyToList(_ sender: Any) {
-        if let text = textField.text {
-            if text != "" {
-                allergyList.append(text)
-                defaults.set(allergyList, forKey: allergyListKey)
-                textField.text?.removeAll()
-                tableView.reloadData()
-            }
+        if let text = textField.text, !text.isEmpty {
+            allergyList.append(text)
+            defaults.set(allergyList, forKey: allergyListKey)
+            textField.text?.removeAll()
+            tableView.reloadData()
         }
         textField.resignFirstResponder()
     }
