@@ -138,18 +138,30 @@
                                     <navigationItem title="Scan Text" id="1Ei-Xf-ktm"/>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mathes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ab8-u8-2HX">
+                                <rect key="frame" x="16" y="513" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1zu-Gg-WNX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fzg-tb-vhK" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="63G-pC-xT9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B6I-HG-fRw" secondAttribute="trailing" constant="16" id="6Fz-uS-0P0"/>
                             <constraint firstItem="B6I-HG-fRw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="113" id="93b-d0-u7t"/>
+                            <constraint firstItem="Ab8-u8-2HX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="F8l-tT-pHK"/>
                             <constraint firstItem="HqK-Zg-q55" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FZe-C5-to1"/>
                             <constraint firstItem="B6I-HG-fRw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="H0W-Qh-xmf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ab8-u8-2HX" secondAttribute="trailing" constant="16" id="HDD-dP-Z5z"/>
                             <constraint firstItem="B6I-HG-fRw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Htv-Zn-Nq8"/>
                             <constraint firstItem="B6I-HG-fRw" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="JGo-IS-8Lx"/>
                             <constraint firstItem="fzg-tb-vhK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Kaj-WG-fgc"/>
                             <constraint firstItem="JQq-kP-3Gg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cSO-aV-hZa"/>
+                            <constraint firstItem="Ab8-u8-2HX" firstAttribute="top" secondItem="B6I-HG-fRw" secondAttribute="bottom" constant="8" id="lbJ-co-NEM"/>
                             <constraint firstItem="JQq-kP-3Gg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="nDU-aK-3sd"/>
                             <constraint firstItem="JQq-kP-3Gg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oN8-G6-L15"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HqK-Zg-q55" secondAttribute="bottom" constant="20" id="rV5-Tw-VrD"/>
@@ -160,6 +172,7 @@
                     <connections>
                         <outlet property="activityIndicator" destination="fzg-tb-vhK" id="cmm-R6-fQy"/>
                         <outlet property="textView" destination="B6I-HG-fRw" id="8sf-GV-bLl"/>
+                        <outlet property="wordMatchesLabel" destination="Ab8-u8-2HX" id="ZfT-I7-xzZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

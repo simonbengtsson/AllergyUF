@@ -11,6 +11,7 @@ import TesseractOCR
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var wordMatchesLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     let allergyListKey = "allergyListKey"
@@ -27,6 +28,7 @@ class ViewController: UIViewController {
             allergyList = tempallergyList as! [String]
         }
         textView.text = ""
+        wordMatchesLabel.text = ""
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,9 +55,10 @@ class ViewController: UIViewController {
     
     func presentUserFeedback(scannedText: String) {
         let result = getWordMatches(scannedText: scannedText)
-        
+        wordMatchesLabel.text = "MATCHES: "
         for word in result {
             print("CONTAINS WORD: \(word)")
+            wordMatchesLabel.text?.append(" \(word)")
         }
     }
     
