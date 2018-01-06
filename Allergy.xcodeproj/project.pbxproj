@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65507D1961A081B8AE9CCD5E /* Pods_Allergy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FC85D1D0228F65261BBD18 /* Pods_Allergy.framework */; };
+		7E5797494EB1175A70FFD5AA /* Pods_AllergyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CE7B2A44CB5C7C0D38E4EB /* Pods_AllergyTests.framework */; };
+		CE372DE02000C41D001A6311 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE372DDF2000C41D001A6311 /* AppDelegate.swift */; };
+		CE372DE22000C41D001A6311 /* ScanTextController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE372DE12000C41D001A6311 /* ScanTextController.swift */; };
+		CE372DE52000C41D001A6311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE372DE32000C41D001A6311 /* Main.storyboard */; };
+		CE372DE72000C41D001A6311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE372DE62000C41D001A6311 /* Assets.xcassets */; };
+		CE372DEA2000C41D001A6311 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE372DE82000C41D001A6311 /* LaunchScreen.storyboard */; };
+		CE372DF52000C41D001A6311 /* AllergyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE372DF42000C41D001A6311 /* AllergyTests.swift */; };
+		CE372E002000C41D001A6311 /* AllergyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE372DFF2000C41D001A6311 /* AllergyUITests.swift */; };
+		CE372E102000C5F9001A6311 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE372E0D2000C5F8001A6311 /* libstdc++.6.0.9.tbd */; };
+		CE372E112000C5F9001A6311 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE372E0E2000C5F8001A6311 /* libstdc++.6.tbd */; };
+		CE372E122000C5F9001A6311 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE372E0F2000C5F9001A6311 /* libstdc++.tbd */; };
+		CE372E142000C60C001A6311 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE372E132000C60C001A6311 /* CoreImage.framework */; };
+		CE372E152000C63C001A6311 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE372E162000C63C001A6311 /* TesseractOCR.framework */; };
+		CE372E182000D10D001A6311 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = CE372E172000D10D001A6311 /* tessdata */; };
+		CE372E1A2000E17F001A6311 /* AllergyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE372E192000E17F001A6311 /* AllergyCell.swift */; };
+		CE372E1C2000E199001A6311 /* AddAllergyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE372E1B2000E199001A6311 /* AddAllergyController.swift */; };
+		E41B72CD61A6D38BA662E36B /* Pods_AllergyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3629E772AE46F53609AC91 /* Pods_AllergyUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE372DF12000C41D001A6311 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE372DD42000C41D001A6311 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE372DDB2000C41D001A6311;
+			remoteInfo = Allergy;
+		};
+		CE372DFC2000C41D001A6311 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE372DD42000C41D001A6311 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE372DDB2000C41D001A6311;
+			remoteInfo = Allergy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05FC85D1D0228F65261BBD18 /* Pods_Allergy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Allergy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EA2BD6A256367A468BD4C5C /* Pods-Allergy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allergy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Allergy/Pods-Allergy.debug.xcconfig"; sourceTree = "<group>"; };
+		341A8E9652B70DCAC32AF22D /* Pods-AllergyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllergyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AllergyTests/Pods-AllergyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		51CE7B2A44CB5C7C0D38E4EB /* Pods_AllergyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AllergyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D88E356FE502EC418497DE /* Pods-AllergyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllergyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AllergyUITests/Pods-AllergyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5FCA16183DE1413B7D519F76 /* Pods-Allergy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allergy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Allergy/Pods-Allergy.release.xcconfig"; sourceTree = "<group>"; };
+		CE372DDC2000C41D001A6311 /* Allergy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Allergy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE372DDF2000C41D001A6311 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE372DE12000C41D001A6311 /* ScanTextController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanTextController.swift; sourceTree = "<group>"; };
+		CE372DE42000C41D001A6311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE372DE62000C41D001A6311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE372DE92000C41D001A6311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE372DEB2000C41D001A6311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE372DF02000C41D001A6311 /* AllergyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllergyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE372DF42000C41D001A6311 /* AllergyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergyTests.swift; sourceTree = "<group>"; };
+		CE372DF62000C41D001A6311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE372DFB2000C41D001A6311 /* AllergyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllergyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE372DFF2000C41D001A6311 /* AllergyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergyUITests.swift; sourceTree = "<group>"; };
+		CE372E012000C41D001A6311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE372E0D2000C5F8001A6311 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		CE372E0E2000C5F8001A6311 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		CE372E0F2000C5F9001A6311 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		CE372E132000C60C001A6311 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		CE372E162000C63C001A6311 /* TesseractOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE372E172000D10D001A6311 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		CE372E192000E17F001A6311 /* AllergyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergyCell.swift; sourceTree = "<group>"; };
+		CE372E1B2000E199001A6311 /* AddAllergyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAllergyController.swift; sourceTree = "<group>"; };
+		D3D98A778001F7097A1431B4 /* Pods-AllergyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllergyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AllergyUITests/Pods-AllergyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF3629E772AE46F53609AC91 /* Pods_AllergyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AllergyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F059982B8FD0DE867B115916 /* Pods-AllergyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllergyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AllergyTests/Pods-AllergyTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE372DD92000C41D001A6311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE372E152000C63C001A6311 /* TesseractOCR.framework in Frameworks */,
+				CE372E142000C60C001A6311 /* CoreImage.framework in Frameworks */,
+				CE372E102000C5F9001A6311 /* libstdc++.6.0.9.tbd in Frameworks */,
+				CE372E112000C5F9001A6311 /* libstdc++.6.tbd in Frameworks */,
+				CE372E122000C5F9001A6311 /* libstdc++.tbd in Frameworks */,
+				65507D1961A081B8AE9CCD5E /* Pods_Allergy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE372DED2000C41D001A6311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E5797494EB1175A70FFD5AA /* Pods_AllergyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE372DF82000C41D001A6311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41B72CD61A6D38BA662E36B /* Pods_AllergyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7114A97E7F64B986EB346B39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE372E162000C63C001A6311 /* TesseractOCR.framework */,
+				CE372E132000C60C001A6311 /* CoreImage.framework */,
+				CE372E0D2000C5F8001A6311 /* libstdc++.6.0.9.tbd */,
+				CE372E0E2000C5F8001A6311 /* libstdc++.6.tbd */,
+				CE372E0F2000C5F9001A6311 /* libstdc++.tbd */,
+				05FC85D1D0228F65261BBD18 /* Pods_Allergy.framework */,
+				51CE7B2A44CB5C7C0D38E4EB /* Pods_AllergyTests.framework */,
+				DF3629E772AE46F53609AC91 /* Pods_AllergyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		947A96DA2498B91379F2E480 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EA2BD6A256367A468BD4C5C /* Pods-Allergy.debug.xcconfig */,
+				5FCA16183DE1413B7D519F76 /* Pods-Allergy.release.xcconfig */,
+				341A8E9652B70DCAC32AF22D /* Pods-AllergyTests.debug.xcconfig */,
+				F059982B8FD0DE867B115916 /* Pods-AllergyTests.release.xcconfig */,
+				D3D98A778001F7097A1431B4 /* Pods-AllergyUITests.debug.xcconfig */,
+				54D88E356FE502EC418497DE /* Pods-AllergyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE372DD32000C41D001A6311 = {
+			isa = PBXGroup;
+			children = (
+				CE372DDE2000C41D001A6311 /* Allergy */,
+				CE372DF32000C41D001A6311 /* AllergyTests */,
+				CE372DFE2000C41D001A6311 /* AllergyUITests */,
+				CE372DDD2000C41D001A6311 /* Products */,
+				947A96DA2498B91379F2E480 /* Pods */,
+				7114A97E7F64B986EB346B39 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE372DDD2000C41D001A6311 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE372DDC2000C41D001A6311 /* Allergy.app */,
+				CE372DF02000C41D001A6311 /* AllergyTests.xctest */,
+				CE372DFB2000C41D001A6311 /* AllergyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE372DDE2000C41D001A6311 /* Allergy */ = {
+			isa = PBXGroup;
+			children = (
+				CE372DE62000C41D001A6311 /* Assets.xcassets */,
+				CE372DE32000C41D001A6311 /* Main.storyboard */,
+				CE372DDF2000C41D001A6311 /* AppDelegate.swift */,
+				CE372E1B2000E199001A6311 /* AddAllergyController.swift */,
+				CE372DE12000C41D001A6311 /* ScanTextController.swift */,
+				CE372E192000E17F001A6311 /* AllergyCell.swift */,
+				CE372DE82000C41D001A6311 /* LaunchScreen.storyboard */,
+				CE372DEB2000C41D001A6311 /* Info.plist */,
+				CE372E172000D10D001A6311 /* tessdata */,
+			);
+			path = Allergy;
+			sourceTree = "<group>";
+		};
+		CE372DF32000C41D001A6311 /* AllergyTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE372DF42000C41D001A6311 /* AllergyTests.swift */,
+				CE372DF62000C41D001A6311 /* Info.plist */,
+			);
+			path = AllergyTests;
+			sourceTree = "<group>";
+		};
+		CE372DFE2000C41D001A6311 /* AllergyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE372DFF2000C41D001A6311 /* AllergyUITests.swift */,
+				CE372E012000C41D001A6311 /* Info.plist */,
+			);
+			path = AllergyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE372DDB2000C41D001A6311 /* Allergy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE372E042000C41D001A6311 /* Build configuration list for PBXNativeTarget "Allergy" */;
+			buildPhases = (
+				A1BB463DB6505AD6CFA7A8A9 /* [CP] Check Pods Manifest.lock */,
+				CE372DD82000C41D001A6311 /* Sources */,
+				CE372DD92000C41D001A6311 /* Frameworks */,
+				CE372DDA2000C41D001A6311 /* Resources */,
+				6CDE2D7709A383221AFEE43E /* [CP] Embed Pods Frameworks */,
+				04E4764EE34FCB8FF45D7670 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Allergy;
+			productName = Allergy;
+			productReference = CE372DDC2000C41D001A6311 /* Allergy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE372DEF2000C41D001A6311 /* AllergyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE372E072000C41D001A6311 /* Build configuration list for PBXNativeTarget "AllergyTests" */;
+			buildPhases = (
+				F270AAEF4695516E416932C5 /* [CP] Check Pods Manifest.lock */,
+				CE372DEC2000C41D001A6311 /* Sources */,
+				CE372DED2000C41D001A6311 /* Frameworks */,
+				CE372DEE2000C41D001A6311 /* Resources */,
+				2ECEEB7CF78D86B95E9462A6 /* [CP] Embed Pods Frameworks */,
+				E29E71C4EB87D9C1FEECA5FD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE372DF22000C41D001A6311 /* PBXTargetDependency */,
+			);
+			name = AllergyTests;
+			productName = AllergyTests;
+			productReference = CE372DF02000C41D001A6311 /* AllergyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE372DFA2000C41D001A6311 /* AllergyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE372E0A2000C41D001A6311 /* Build configuration list for PBXNativeTarget "AllergyUITests" */;
+			buildPhases = (
+				A977CB32097BBB73881466A1 /* [CP] Check Pods Manifest.lock */,
+				CE372DF72000C41D001A6311 /* Sources */,
+				CE372DF82000C41D001A6311 /* Frameworks */,
+				CE372DF92000C41D001A6311 /* Resources */,
+				36FA5FC4822BB990B154FD3E /* [CP] Embed Pods Frameworks */,
+				FECCADA95DBA79944B631E2D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE372DFD2000C41D001A6311 /* PBXTargetDependency */,
+			);
+			name = AllergyUITests;
+			productName = AllergyUITests;
+			productReference = CE372DFB2000C41D001A6311 /* AllergyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE372DD42000C41D001A6311 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Tim Johansson";
+				TargetAttributes = {
+					CE372DDB2000C41D001A6311 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					CE372DEF2000C41D001A6311 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CE372DDB2000C41D001A6311;
+					};
+					CE372DFA2000C41D001A6311 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CE372DDB2000C41D001A6311;
+					};
+				};
+			};
+			buildConfigurationList = CE372DD72000C41D001A6311 /* Build configuration list for PBXProject "Allergy" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE372DD32000C41D001A6311;
+			productRefGroup = CE372DDD2000C41D001A6311 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE372DDB2000C41D001A6311 /* Allergy */,
+				CE372DEF2000C41D001A6311 /* AllergyTests */,
+				CE372DFA2000C41D001A6311 /* AllergyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE372DDA2000C41D001A6311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE372DEA2000C41D001A6311 /* LaunchScreen.storyboard in Resources */,
+				CE372E182000D10D001A6311 /* tessdata in Resources */,
+				CE372DE72000C41D001A6311 /* Assets.xcassets in Resources */,
+				CE372DE52000C41D001A6311 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE372DEE2000C41D001A6311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE372DF92000C41D001A6311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04E4764EE34FCB8FF45D7670 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Allergy/Pods-Allergy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2ECEEB7CF78D86B95E9462A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AllergyTests/Pods-AllergyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36FA5FC4822BB990B154FD3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AllergyUITests/Pods-AllergyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CDE2D7709A383221AFEE43E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Allergy/Pods-Allergy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Allergy/Pods-Allergy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1BB463DB6505AD6CFA7A8A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Allergy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A977CB32097BBB73881466A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AllergyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E29E71C4EB87D9C1FEECA5FD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AllergyTests/Pods-AllergyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F270AAEF4695516E416932C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AllergyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FECCADA95DBA79944B631E2D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AllergyUITests/Pods-AllergyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE372DD82000C41D001A6311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE372E1A2000E17F001A6311 /* AllergyCell.swift in Sources */,
+				CE372DE22000C41D001A6311 /* ScanTextController.swift in Sources */,
+				CE372E1C2000E199001A6311 /* AddAllergyController.swift in Sources */,
+				CE372DE02000C41D001A6311 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE372DEC2000C41D001A6311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE372DF52000C41D001A6311 /* AllergyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE372DF72000C41D001A6311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE372E002000C41D001A6311 /* AllergyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE372DF22000C41D001A6311 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE372DDB2000C41D001A6311 /* Allergy */;
+			targetProxy = CE372DF12000C41D001A6311 /* PBXContainerItemProxy */;
+		};
+		CE372DFD2000C41D001A6311 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE372DDB2000C41D001A6311 /* Allergy */;
+			targetProxy = CE372DFC2000C41D001A6311 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE372DE32000C41D001A6311 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE372DE42000C41D001A6311 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE372DE82000C41D001A6311 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE372DE92000C41D001A6311 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE372E022000C41D001A6311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE372E032000C41D001A6311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE372E052000C41D001A6311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EA2BD6A256367A468BD4C5C /* Pods-Allergy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8JECN4ABM6;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Allergy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.allergy.uf.Allergy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE372E062000C41D001A6311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FCA16183DE1413B7D519F76 /* Pods-Allergy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8JECN4ABM6;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Allergy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.allergy.uf.Allergy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE372E082000C41D001A6311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 341A8E9652B70DCAC32AF22D /* Pods-AllergyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AllergyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.allergy.uf.AllergyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Allergy.app/Allergy";
+			};
+			name = Debug;
+		};
+		CE372E092000C41D001A6311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F059982B8FD0DE867B115916 /* Pods-AllergyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AllergyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.allergy.uf.AllergyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Allergy.app/Allergy";
+			};
+			name = Release;
+		};
+		CE372E0B2000C41D001A6311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3D98A778001F7097A1431B4 /* Pods-AllergyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AllergyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.allergy.uf.AllergyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Allergy;
+			};
+			name = Debug;
+		};
+		CE372E0C2000C41D001A6311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54D88E356FE502EC418497DE /* Pods-AllergyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AllergyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.allergy.uf.AllergyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Allergy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE372DD72000C41D001A6311 /* Build configuration list for PBXProject "Allergy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE372E022000C41D001A6311 /* Debug */,
+				CE372E032000C41D001A6311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE372E042000C41D001A6311 /* Build configuration list for PBXNativeTarget "Allergy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE372E052000C41D001A6311 /* Debug */,
+				CE372E062000C41D001A6311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE372E072000C41D001A6311 /* Build configuration list for PBXNativeTarget "AllergyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE372E082000C41D001A6311 /* Debug */,
+				CE372E092000C41D001A6311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE372E0A2000C41D001A6311 /* Build configuration list for PBXNativeTarget "AllergyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE372E0B2000C41D001A6311 /* Debug */,
+				CE372E0C2000C41D001A6311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE372DD42000C41D001A6311 /* Project object */;
+}
